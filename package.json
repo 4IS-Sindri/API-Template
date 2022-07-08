@@ -1,0 +1,67 @@
+{
+  "name": "@4is-sindri/api-template",
+  "displayName": "Sindri Template API",
+  "version": "0.0.0",
+  "description": "A simple template for an API using Koa.",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/4IS-Sindri/Template-API",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "install": "",
+    "build": "tsc",
+    "pretty": "prettier --write .",
+    "docker:build": "docker build -t 4lch4/sindri:latest .",
+    "docker:stop": "docker stop sindri && docker rm sindri",
+    "docker:start": "./start.sh",
+    "docker:refresh": "pnpm docker:build && pnpm docker:stop && pnpm docker:start",
+    "m:build": "make build",
+    "m:start": "make start",
+    "m:stop": "make stop",
+    "m:rebuild": "make rebuild",
+    "m:logs": "make logs"
+  },
+  "keywords": [
+    "koa",
+    "typescript",
+    "builds",
+    "templates",
+    "api",
+    "bootstrapping",
+    "docker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:4IS-Sindri/Template-API.git"
+  },
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "bugs": {
+    "email": "sindri@4lch4.email",
+    "url": "https://github.com/4IS-Sindri/Template-API/issues"
+  },
+  "dependencies": {
+    "@4lch4/koa-oto": "^1.3.2",
+    "@4lch4/koa-router-printer": "^1.4.3",
+    "@4lch4/logger": "^1.9.2",
+    "@koa/router": "^11.0.1",
+    "ansi-colors": "^4.1.3",
+    "chalk": "^5.0.1",
+    "dayjs": "^1.11.2",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa__router": "^8.0.11",
+    "@types/node": "^16",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}
