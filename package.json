@@ -9,18 +9,8 @@
   "type": "module",
   "scripts": {
     "start": "node dist/index.js",
-    "install": "",
     "build": "tsc",
-    "pretty": "prettier --write .",
-    "docker:build": "docker build -t 4lch4/sindri:latest .",
-    "docker:stop": "docker stop sindri && docker rm sindri",
-    "docker:start": "./start.sh",
-    "docker:refresh": "pnpm docker:build && pnpm docker:stop && pnpm docker:start",
-    "m:build": "make build",
-    "m:start": "make start",
-    "m:stop": "make stop",
-    "m:rebuild": "make rebuild",
-    "m:logs": "make logs"
+    "pretty": "prettier --write ."
   },
   "keywords": [
     "koa",
