@@ -70,8 +70,8 @@ build-local:
 	@pnpm install
 	@pnpm start
 
-# Start the container with the latest tag, passing in the required environment
-# variables, and tailing/following the container logs.
+# Start the container with the latest tag and passes in the required environment
+# variables.
 start:
 	@docker run -d --name $(APP_NAME) \
 		-p $(APP_PORT):$(APP_PORT) \
@@ -81,7 +81,7 @@ start:
 		-e APP_VERSION=$(PKG_VERSION) \
 		$(IMAGE_NAME)
 
-# Stop the container using Docker Compose.
+# Stop the container.
 stop:
 	@docker stop $(APP_NAME)
 
