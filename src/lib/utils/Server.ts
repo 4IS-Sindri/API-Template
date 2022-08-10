@@ -13,15 +13,12 @@ export class Server {
   constructor(config: IAppConfig) {
     this.app = new Koa()
 
-    logger.info(`config...`)
-    logger.info(config)
-
     this.config = config
   }
 
   start() {
     this.app.listen(this.config.port, () => {
-      console.log(`${this.config.name}-v${this.config.version} has come online!`)
+      logger.success(`${this.config.name}-v${this.config.version} has come online!`)
     })
 
     return this // For method chaining
