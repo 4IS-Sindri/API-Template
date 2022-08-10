@@ -1,0 +1,37 @@
+{
+  "name": "API Project",
+  "description": "The questionnaire for initializing a new API project.",
+  "interactions": [
+    {
+      "filename": "package.json",
+      "questions": [
+        {
+          "name": "APP_NAME",
+          "message": "What is the name of your app?"
+        },
+        {
+          "name": "APP_DISPLAY_NAME",
+          "message": "What is the display name of your app?"
+        },
+        {
+          "name": "APP_DESCRIPTION",
+          "message": "What is the description of your app?"
+        },
+        {
+          "name": "APP_VERSION",
+          "message": "What is the version of your app?",
+          "default": "0.0.0"
+        },
+        {
+          "name": "REPO_OWNER",
+          "message": "What/who is the owner of your repo?",
+          "default": "4lch4"
+        },
+        {
+          "name": "REPO_NAME",
+          "message": "What is the name of your repo?"
+        }
+      ]
+    }
+  ]
+}

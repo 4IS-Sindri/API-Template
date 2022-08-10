@@ -1,29 +1,20 @@
 {
-  "name": "@4is-sindri/api-template",
-  "displayName": "Sindri Template API",
-  "version": "0.0.0",
-  "description": "A simple template for an API using Koa.",
+  "name": "{{APP_NAME}}",
+  "displayName": "{{APP_DISPLAY_NAME}}",
+  "version": "{{APP_VERSION}}",
+  "description": "{{APP_DESCRIPTION}}",
   "main": "dist/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/4IS-Sindri/Template-API",
-  "type": "module",
+  "homepage": "https://git.4lch4.io/{{REPO_OWNER}}/{{REPO_NAME}}",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
     "pretty": "prettier --write ."
   },
-  "keywords": [
-    "koa",
-    "typescript",
-    "builds",
-    "templates",
-    "api",
-    "bootstrapping",
-    "docker"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git@github.com:4IS-Sindri/Template-API.git"
+    "url": "ssh://git@git.4lch4.io:22022/{{REPO_OWNER}}/{{REPO_NAME}}.git"
   },
   "author": {
     "name": "4lch4",
@@ -32,7 +23,7 @@
   },
   "bugs": {
     "email": "sindri@4lch4.email",
-    "url": "https://github.com/4IS-Sindri/Template-API/issues"
+    "url": "https://git.4lch4.io/{{REPO_OWNER}}/{{REPO_NAME}}/issues"
   },
   "dependencies": {
     "@4lch4/koa-oto": "^1.3.2",
